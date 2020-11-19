@@ -1,11 +1,12 @@
 import './App.css';
 //import Home from './components/Home';
-import LogIn from './components/LogIn';
+//import LogIn from './components/LogIn';
+import SignIn from './components/SignIn';
 
 function App() {
   return (
     <div className="App">
-      <LogIn />
+      <SignIn />
     </div>
   );
 }
