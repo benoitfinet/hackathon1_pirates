@@ -1,11 +1,12 @@
 import './LogIn.css';
-import logo from '../img/hooked-in-logo.png';
+import { Link } from 'react-router-dom';
+import logo from '../img/hookedin-logo-header.png';
 
 function LogIn() {
     return (
         <div>
-            <img alt="logo" id="logo" src={logo} />
-            <div className="FormEmployee">
+            <Link to="/"><img alt="logo" id="logo" src={logo}></img></Link>
+                <div className="FormEmployee">
                 <h1>Log In</h1>
 
                 <form >
@@ -29,11 +30,13 @@ function LogIn() {
                     />
                     </div>
                     <div className="form-data">
+                    <Link to="/Crew">
                     <input
                     type="submit"
                     value="Connect"
                     id="button"
                     />
+                    </Link>
                     </div>
                 </div>
                 </form>
