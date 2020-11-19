@@ -1,6 +1,8 @@
-import './Home.css';
-import logo from '../img/hooked-in-logo.png';
+import { Link } from 'react-router-dom';
+import logo from '../img/hookedin-logo-header.png';
 import flag from '../img/Pirate_Flag.png';
+
+import './Home.css';
 
 function Home() {
     return (
@@ -11,8 +13,8 @@ function Home() {
                 <p id="intro">AHOY BUCCANEER!<br></br> PLEASE TELL US WHAT KIND OF PIRATE YOU ARE</p>
             </div>
             <div id="lookingfor">
-                <p>LOOKING FOR A CREW</p>
-                <p>LOOKING FOR A MATE</p>
+                <Link to="/crew">LOOKING FOR A CREW</Link> 
+                <p>LOOKING FOR A mate</p> 
             </div>
             <div>
 
