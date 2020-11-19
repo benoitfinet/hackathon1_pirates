@@ -3,9 +3,14 @@ import React from "react";
 import Header from "./Header";
 import Pirate from "./Pirate";
 import PirateDetails from "./PirateDetails";
+
+import SelectPirate from "./SelectPirate";
+
 import { Link } from 'react-router-dom';
 
+
 import './PirateOffers.css';
+import './SelectPirate.css';
 
 const offers = [
   {
@@ -100,6 +105,17 @@ class PirateOffers extends React.Component {
   render() {
     return (
       <div>
+        <Header />  
+        <SelectPirate />
+        <div className="flex">
+          <div> 
+            {offers.map((offer) => {
+              return <Pirate offer={offer} setDetails={this.setDetails}/> 
+            })}
+          </div>
+          <div>
+            {this.state.details && <PirateDetails details={this.state.details} />}
+
         <Link to="/"><Header /></Link>
       <div className="flex">
         <div> 
@@ -107,10 +123,7 @@ class PirateOffers extends React.Component {
             return <Pirate offer={offer} setDetails={this.setDetails}/> 
           })}
           </div>
-        <div>
-          {this.state.details && <PirateDetails details={this.state.details} />}
         </div>
-      </div>
       </div>
     );
   }
