@@ -7,15 +7,15 @@ import './Home.css';
 function Home() {
     return (
         <div id="home">
-            <img id="logo" alt="logo" src={logo} />
+            <img id="homelogo" alt="logo" src={logo} />
             <div>
                 
                 <p id="intro">AHOY BUCCANEER!<br></br> Please, if you already have an account, log in. If you don't, please create one</p>
             </div>
             <img id="flag" alt="flag" src={flag} />
             <div id="lookingfor">
-                <p><Link to="/crew">Sign In</Link></p>
-                <p>Log In</p> 
+                <p><Link to="/SignIn">Sign In</Link></p>
+                <p><Link to="/LogIn">Log In</Link></p> 
             </div>
             <div>
 

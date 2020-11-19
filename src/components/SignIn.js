@@ -1,11 +1,12 @@
 import React from 'react'
 import './SignIn.css'
-import logo from '../img/hooked-in-logo.png';
+import { Link } from 'react-router-dom';
+import logo from '../img/hookedin-logo-header.png';
 
 function SignIn() {
     return (
         <div>
-            <img alt="logo" id="logo" src={logo} />
+            <Link to="/"><img alt="logo" id="logo" src={logo} /></Link>
             <div className="FormEmployee">
                 <h1>Sign In</h1>
                 <form >
@@ -51,11 +52,13 @@ function SignIn() {
                     />
                     </div>
                     <div className="form-data">
+                    <Link to="/Crew">
                     <input
                     type="submit"
                     value="Connect"
                     id="button"
                     />
+                    </Link>
                     </div>
                 </div>
                 </form>

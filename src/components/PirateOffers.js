@@ -3,6 +3,7 @@ import React from "react";
 import Header from "./Header";
 import Pirate from "./Pirate";
 import PirateDetails from "./PirateDetails";
+import { Link } from 'react-router-dom';
 
 import './PirateOffers.css';
 
@@ -99,7 +100,7 @@ class PirateOffers extends React.Component {
   render() {
     return (
       <div>
-        <Header />  
+        <Link to="/"><Header /></Link>
       <div className="flex">
         <div> 
           {offers.map((offer) => {
