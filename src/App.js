@@ -15,7 +15,6 @@ function App() {
         <Route exact path='/' component={Home} />
         <Route path='/crew' component={PirateOffers} />
       </Switch>
-      <SignIn />
     </div>
   );
 }

@@ -13,41 +13,42 @@
     display: block;
     margin: auto;
     padding: auto;
+    padding-bottom:3%;
 }
 
 #flag{
     width: 20%;
     height: auto;
-    padding-left: 15%;
-    float: left;
+    display: block;
+    margin: auto;
+    padding-bottom: 5%;
 }
 
 #intro{
     color: white;
     font-family: 'Pirata One', cursive;
     font-size: 50px;
-    padding-top: 2%;
-    padding-right: 10%;
+    text-align: center;
+    padding-bottom: 3%;
 }
 
 #lookingfor{
     color: white;
     font-family: 'Pirata One', cursive;
     font-size: 42px;
-    padding-top: 10%;
-    padding-right: 20%;
-    padding-left: 20%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30%;
 }
 
-#lookingfor p:nth-of-type(1){
+#lookingfor a:nth-of-type(1){
     border: 1px solid white;
     border-radius: 10%;
-    float: left;
     cursor: pointer;
 }
 #lookingfor p:nth-of-type(2){
     border: 1px solid white;
     border-radius: 10%;
-    float: right;
     cursor: pointer;
-}
+} 

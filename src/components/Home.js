@@ -9,12 +9,13 @@ function Home() {
         <div id="home">
             <img id="logo" alt="logo" src={logo} />
             <div>
-                <img id="flag" alt="flag" src={flag} />
-                <p id="intro">AHOY BUCCANEER!<br></br> PLEASE TELL US WHAT KIND OF PIRATE YOU ARE</p>
+                
+                <p id="intro">AHOY BUCCANEER!<br></br> Please, if you already have an account, log in. If you don't, please create one</p>
             </div>
+            <img id="flag" alt="flag" src={flag} />
             <div id="lookingfor">
-                <Link to="/crew">LOOKING FOR A CREW</Link> 
-                <p>LOOKING FOR A mate</p> 
+                <p><Link to="/crew">Sign In</Link></p>
+                <p>Log In</p> 
             </div>
             <div>
 
