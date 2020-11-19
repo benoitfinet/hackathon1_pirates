@@ -3,8 +3,10 @@ import React from "react";
 import Header from "./Header";
 import Pirate from "./Pirate";
 import PirateDetails from "./PirateDetails";
+import SelectPirate from "./SelectPirate";
 
 import './PirateOffers.css';
+import './SelectPirate.css';
 
 const offers = [
   {
@@ -100,16 +102,17 @@ class PirateOffers extends React.Component {
     return (
       <div>
         <Header />  
-      <div className="flex">
-        <div> 
-          {offers.map((offer) => {
-            return <Pirate offer={offer} setDetails={this.setDetails}/> 
-          })}
+        <SelectPirate />
+        <div className="flex">
+          <div> 
+            {offers.map((offer) => {
+              return <Pirate offer={offer} setDetails={this.setDetails}/> 
+            })}
           </div>
-        <div>
-          {this.state.details && <PirateDetails details={this.state.details} />}
+          <div>
+            {this.state.details && <PirateDetails details={this.state.details} />}
+          </div>
         </div>
-      </div>
       </div>
     );
   }
