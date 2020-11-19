@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Pirata One', cursive;
+}
+
+#logo{
+    width: 15%;
+    height: 15%;
+    padding-left: 3%;
+}
+
+.FormEmployee {
+    width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 10%;
+}
+  
+.FormEmployee h1 {
+    text-align: center;
+}
+  
+.FormEmployee .form-data {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+  
+.FormEmployee .form-data label {
+    display: inline-block;
+    width: 75px;
+    margin-right: 10px;
+    text-align: right;
+}
+  
+.FormEmployee .form-data input:not([type="submit"]) {
+    flex-grow: 1;
+}
+
+#button{
+    height: 40px;
+    width: 100px;
+}
+
+input {
+    height: 40px;
+    width: 300px;
+    font-size: 20px;
+    border-radius: 50% 50%;
+    text-align: center;
+    outline: none;
+}
+
+label {
+    font-size: 24px;
+    padding-top: 4px;
+}
