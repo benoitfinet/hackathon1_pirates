@@ -3,7 +3,11 @@ import React from "react";
 import Header from "./Header";
 import Pirate from "./Pirate";
 import PirateDetails from "./PirateDetails";
+
 import SelectPirate from "./SelectPirate";
+
+import { Link } from 'react-router-dom';
+
 
 import './PirateOffers.css';
 import './SelectPirate.css';
@@ -111,6 +115,13 @@ class PirateOffers extends React.Component {
           </div>
           <div>
             {this.state.details && <PirateDetails details={this.state.details} />}
+
+        <Link to="/"><Header /></Link>
+      <div className="flex">
+        <div> 
+          {offers.map((offer) => {
+            return <Pirate offer={offer} setDetails={this.setDetails}/> 
+          })}
           </div>
         </div>
       </div>
