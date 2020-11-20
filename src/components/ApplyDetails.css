@@ -1,6 +1,15 @@
 .detailsApply {
-    text-align: center;
-    float: right;
-    padding-right: 30%;
-    padding-top: 5%;
-  }
+  width: 700px;
+  text-align: center;
+  margin-left: 180px;
+  margin-top: 100px;
+}
+
+.detailsApply h1 {
+  margin: 20px;
+}
+
+.detailsApply img {
+  width: 400px;
+  height: auto;
+}

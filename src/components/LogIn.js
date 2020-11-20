@@ -1,6 +1,7 @@
 import './LogIn.css';
 import { Link } from 'react-router-dom';
 import logo from '../img/hookedin-logo-header.png';
+import ApplyOffers from './ApplyOffers';
 import { Component } from 'react';
 
 class LogIn extends Component {
@@ -48,7 +49,6 @@ class LogIn extends Component {
     render() {
         return (
             <div>
-                <Link to="/"><img alt="logo" id="logo" src={logo}></img></Link>
                     <div className="loginmain">
                     <h1>Log In</h1>
                     <form onSubmit={this.submitForm}>
@@ -76,11 +76,11 @@ class LogIn extends Component {
                         />
                         </div>
                         <div className="loginform">
-                        <input
+                        <Link to="/Crew" ><input
                         type="submit"
                         value="Send"
                         id="loginbutton"
-                        />
+                        /> </Link>
                         </div>
                     </div>
                     </form>

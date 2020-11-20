@@ -1,10 +1,13 @@
 import React from "react";
 import axios from 'axios';
+import { Link } from 'react-router-dom';
+
 import Header from "./Header";
 import Apply from "./Apply";
 import ApplyDetails from "./ApplyDetails";
-import { Link } from 'react-router-dom';
 import SelectApply from "./SelectApply";
+
+import "./ApplyOffers.css";
 
 class PirateOffers extends React.Component {
 
@@ -18,26 +21,26 @@ class PirateOffers extends React.Component {
   }
 
   componentDidMount() { 
-    axios.get('http://localhost:8000/recruiter/index')
+    axios.get('http://localhost:8000/candidate/index')
         .then(res => {
+            console.log(res);
             this.setState({ rdetailsArray: res.data });
     });
 }
 
   render() {
-    console.log(this.state.rdetails);
     return (
       <div>
         <Link to="/"><Header /></Link>
         <SelectApply />
-      <div>
-        <div>
-        <div>{this.state.rdetails && <ApplyDetails rdetails={this.state.rdetails} />}</div>
-          {this.state.rdetailsArray.map((roffer) => {
-            return <Apply roffer={roffer} setrDetails={this.setrDetails} />
-          })}
+        <div className="cardStyle">
+          <div>          
+            {this.state.rdetailsArray.map((roffer) => {
+              return <Apply roffer={roffer} setrDetails={this.setrDetails} />
+            })}
           </div>
-      </div>
+          <div>{this.state.rdetails && <ApplyDetails rdetails={this.state.rdetails} />}</div>
+        </div>
       </div>
     );
   }

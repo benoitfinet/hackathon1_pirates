@@ -1,41 +1,46 @@
 import React from "react";
 import axios from 'axios';
-import Header from "./Header";
-import Pirate from "./Pirate";
-import PirateDetails from "./PirateDetails";
 import { Link } from 'react-router-dom';
-import SelectPirate from "./SelectPirate";
+
+import Header from "./Header";
+import Apply from "./Apply";
+import ApplyDetails from "./ApplyDetails";
+import SelectApply from "./SelectApply";
+
+import "./ApplyOffers.css";
 
 class PirateOffers extends React.Component {
 
   state= {
-    details: [0]
+    rdetailsArray: [0],
+    rdetails: {}
   }
 
-  setDetails = (details) => {
-    this.setState({details: details})
+  setrDetails = (rdetails) => {
+    this.setState({rdetails: rdetails})
   }
 
   componentDidMount() { 
-    axios.get('http://localhost:8000/candidate/index')
+    axios.get('http://localhost:8000/recruiter/index')
         .then(res => {
-            this.setState({ details: res.data });
+            this.setState({ rdetailsArray: res.data });
     });
 }
 
   render() {
+    console.log(this.state.rdetails);
     return (
       <div>
         <Link to="/"><Header /></Link>
-        <SelectPirate />
-      <div>
-        <div>
-        <div>{this.state.details && <PirateDetails details={this.state.details} />}</div>
-          {this.state.details.map((offer) => {
-            return <Pirate offer={offer} setDetails={this.setDetails} />
-          })}
+        <SelectApply />
+        <div className="cardStyle">
+          <div>          
+            {this.state.rdetailsArray.map((roffer) => {
+              return <Apply roffer={roffer} setrDetails={this.setrDetails} />
+            })}
           </div>
-      </div>
+          <div>{this.state.rdetails && <ApplyDetails rdetails={this.state.rdetails} />}</div>
+        </div>
       </div>
     );
   }
