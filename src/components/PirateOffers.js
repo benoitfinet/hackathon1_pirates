@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "react";
 
 import Header from "./Header";
 import Pirate from "./Pirate";
@@ -96,6 +97,18 @@ class PirateOffers extends React.Component {
 
   setDetails = (details) => {
     this.setState({details: details})
+  }
+
+  componentDidMount() {
+    this.fetchData()
+  }
+  fetchData = () => {
+    fetch('http://localhost:8000/candidate/index')
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
+      this.setState({ details : data[0] })
+    })
   }
 
   render() {

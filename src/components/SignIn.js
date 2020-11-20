@@ -17,6 +17,7 @@ function SignIn() {
                         id="name"
                         name="name"
                         placeholder="Sparrow"
+                        className="sign-input"
                     />
                     </div>
                     <div className="form-data">
@@ -25,6 +26,7 @@ function SignIn() {
                         id="firstname"
                         name="firsname"
                         placeholder="Jack"
+                        className="sign-input"
                     />
                     </div>
                     <div className="form-data">
@@ -33,6 +35,7 @@ function SignIn() {
                         id="email"
                         name="email"
                         placeholder="pirates@hookedIn.com"
+                        className="sign-input"
                     />
                     </div>
                     <div className="form-data">
@@ -41,6 +44,7 @@ function SignIn() {
                         id="password"
                         name="password"
                         placeholder="Insert password"
+                        className="sign-input"
                     />
                     </div>
                     <div className="form-data">
@@ -49,6 +53,7 @@ function SignIn() {
                         id="password"
                         name="password"
                         placeholder="Confirm password"
+                        className="sign-input"
                     />
                     </div>
                     <div className="form-data">
@@ -57,6 +62,7 @@ function SignIn() {
                     type="submit"
                     value="Connect"
                     id="button"
+                    className="sign-input"
                     />
                     </Link>
                     </div>

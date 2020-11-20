@@ -18,6 +18,7 @@ function LogIn() {
                         id="email"
                         name="email"
                         placeholder="pirates@hookedIn.com"
+                        className="log-input"
                     />
                     </div>
 
@@ -27,6 +28,7 @@ function LogIn() {
                         id="password"
                         name="password"
                         placeholder="Insert password"
+                        className="log-input"
                     />
                     </div>
                     <div className="form-data">
@@ -35,6 +37,7 @@ function LogIn() {
                     type="submit"
                     value="Connect"
                     id="button"
+                    className="log-input"
                     />
                     </Link>
                     </div>
