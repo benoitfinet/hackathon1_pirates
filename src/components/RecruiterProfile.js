@@ -6,17 +6,17 @@ function RecruiterProfile() {
     return (
         <div>
             <div className="recruitermain">
-            <Header />
-            <h1>Welcome on Board, Sailor</h1>
-            <img id="profilpicrecruiter" alt="pirate" src="https://i.pinimg.com/originals/6f/e4/c8/6fe4c8e73919c5836b72894cd8b1a407.jpg" />
+            <Link to="/"><Header /></Link>
+            <h1>Welcome on Board, Captain</h1>
+            <img id="profilpicrecruiter" alt="pirate" src="https://i.skyrock.net/1798/80241798/pics/3033851157_1_2_G76AS9Y1.jpg" />
             <div id="cardprofilrecruiter">
-                <p>Your description : "Mainly active in the Caribbean, he served under Howell Davis and then under Bartholomew Roberts. Will be assassinated
-                     in his hammock with his quartermaster during a mutiny."</p>
+                <p>"Fifteenth and sixteenth century building with two masts, slender, generally rigged with a lateen sail. The design represents a Portuguese
+                caravel"</p>
                 <br></br>
-                <p>Your area : Caraibe</p>
-                <p>Your job : Gunner</p>
-                <p>Your language : French</p>
-                <p>Your experience : 5 years, 8 boats attacked</p>
+                <p>Your boat : Black Pearl</p>
+                <p>Your crew : 60 people</p>
+                <p>Your storage : 500 alcohol, 8000 money, 500 food</p>
+                <p>Your experience : 20 boats attacked</p>
                 <p>Your resistance : 3 gallon a day</p>
             </div>
             <Link to="/Crew"><button id="profilebuttonrecruiter">Find a pirate</button></Link>

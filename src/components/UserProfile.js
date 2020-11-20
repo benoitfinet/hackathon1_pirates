@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function UserProfile({ offer }) {
     return (
         <div className="usermain">
-            <Header />
+            <Link to="/"><Header /></Link>
             <h1>Welcome on Board, Sailor</h1>
             <img id="profilpic" alt="pirate" src="https://i.pinimg.com/originals/6f/e4/c8/6fe4c8e73919c5836b72894cd8b1a407.jpg" />
             <div id="cardprofil">
@@ -18,7 +18,7 @@ function UserProfile({ offer }) {
                 <p>Your experience : 5 years, 8 boats attacked</p>
                 <p>Your resistance : 3 gallon a day</p>
             </div>
-            <Link to="/Crew"><button id="profilebutton">Find a job</button></Link>
+            <Link to="/Apply"><button id="profilebutton">Find a job</button></Link>
         </div>
     )
 }
