@@ -25,12 +25,8 @@ class SignIn extends Component {
         e.preventDefault();
         const config = {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(this.state)
         };
-        const url = "localhost:8000/security/register";
+        const url = "http://localhost:8000/security/register";
         fetch(url, config)
             .then((res) => res.json())
             .then((res) => {
@@ -52,7 +48,7 @@ class SignIn extends Component {
                 <Link to="/"><img alt="logo" id="logo" src={logo} /></Link>
                 <div className="signinmain">
                     <h1>Sign In</h1>
-                    <form onSubmit={this.submitForm}>
+                    <form onSubmit={this.submitForm} method="POST">
                     <div>
                         <div className="signinform">
                         <input
@@ -68,7 +64,7 @@ class SignIn extends Component {
                         <input
                             type="text"
                             id="lastname"
-                            name="firsname"
+                            name="lastname"
                             placeholder="Jack"
                             onChange={this.onChange}
                             value={this.state.lastname}
