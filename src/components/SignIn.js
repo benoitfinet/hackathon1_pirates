@@ -25,6 +25,10 @@ class SignIn extends Component {
         e.preventDefault();
         const config = {
           method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(this.state)
         };
         const url = "http://localhost:8000/security/register";
         fetch(url, config)
@@ -45,10 +49,10 @@ class SignIn extends Component {
     render () {
         return (
             <div>
-                <Link to="/"><img alt="logo" id="logo" src={logo} /></Link>
+                <Link to="/"><img alt="logo" id="logo" src={logo}/></Link>
                 <div className="signinmain">
                     <h1>Sign In</h1>
-                    <form onSubmit={this.submitForm} method="POST">
+                    <form onSubmit={this.submitForm}>
                     <div>
                         <div className="signinform">
                         <input
