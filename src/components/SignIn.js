@@ -52,7 +52,7 @@ function SignIn() {
                     />
                     </div>
                     <div className="signinform">
-                    <Link to="/Crew">
+                    <Link to="/UserProfile">
                     <input
                     type="submit"
                     value="Connect"

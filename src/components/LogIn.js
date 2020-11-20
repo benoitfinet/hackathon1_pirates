@@ -30,7 +30,7 @@ function LogIn() {
                     />
                     </div>
                     <div className="loginform">
-                    <Link to="/Crew">
+                    <Link to="/UserProfile">
                     <input
                     type="submit"
                     value="Connect"
