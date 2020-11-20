@@ -29,10 +29,10 @@ class PirateOffers extends React.Component {
         <Link to="/"><Header /></Link>
         <SelectPirate />
       <div>
-        <div> 
+        <div>
         <div>{this.state.details && <PirateDetails details={this.state.details} />}</div>
           {this.state.details.map((offer) => {
-            return <Pirate offer={offer} setDetails={this.setDetails} /> 
+            return <Pirate offer={offer} setDetails={this.setDetails} />
           })}
           </div>
       </div>
