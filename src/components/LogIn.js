@@ -76,11 +76,11 @@ class LogIn extends Component {
                         />
                         </div>
                         <div className="loginform">
-                        <Link to="/Crew" ><input
+                        <input
                         type="submit"
                         value="Send"
                         id="loginbutton"
-                        /> </Link>
+                        /> 
                         </div>
                     </div>
                     </form>

@@ -20,6 +20,13 @@ class PirateOffers extends React.Component {
     this.setState({rdetails: rdetails})
   }
 
+  test = () => {
+    axios.get('http://localhost:8000/recruiter/index')
+        .then(res => {
+            this.setState({ rdetailsArray: res.data });
+    });
+  }
+
   componentDidMount() { 
     axios.get('http://localhost:8000/recruiter/index')
         .then(res => {
@@ -32,7 +39,7 @@ class PirateOffers extends React.Component {
     return (
       <div>
         <Link to="/"><Header /></Link>
-        <SelectApply />
+        <SelectApply test={this.test} />
         <div className="cardStyle">
           <div>          
             {this.state.rdetailsArray.map((roffer) => {
