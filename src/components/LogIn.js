@@ -36,12 +36,7 @@ function LogIn() {
                     <input
                     type="submit"
                     value="Connect"
-<<<<<<< HEAD
-                    id="button"
-                    className="log-input"
-=======
                     id="loginbutton"
->>>>>>> 1d6b83d0d172de8dd10d5b05b835441ceb35c8eb
                     />
                     </Link>
                     </div>
