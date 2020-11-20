@@ -19,7 +19,7 @@ a:link {
     padding-bottom:3%;
 }
 
-#flag{
+#homeflag{
     width: 20%;
     height: auto;
     display: block;
@@ -27,7 +27,7 @@ a:link {
     padding-bottom: 5%;
 }
 
-#intro{
+#homeintro{
     color: white;
     font-family: 'Pirata One', cursive;
     font-size: 50px;
@@ -35,7 +35,7 @@ a:link {
     padding-bottom: 3%;
 }
 
-#lookingfor{
+#homelookingfor{
     color: white;
     font-family: 'Pirata One', cursive;
     font-size: 42px;
@@ -45,12 +45,12 @@ a:link {
     padding: 0 30%;
 }
 
-#lookingfor a:nth-of-type(1){
+#homelookingfor a:nth-of-type(1){
     border: 1px solid white;
     border-radius: 10%;
     cursor: pointer;
 }
-#lookingfor p:nth-of-type(2){
+#homelookingfor a:nth-of-type(2){
     border: 1px solid white;
     border-radius: 10%;
     cursor: pointer;

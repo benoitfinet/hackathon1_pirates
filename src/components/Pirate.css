@@ -1,0 +1,12 @@
+#piratemain{
+    color: white;
+    border: 1px solid white;
+    height: 120px;
+    width: 220px;
+    margin: 3% 3%;
+    display: block;
+    text-align: justify;
+    padding-left: 1%;
+    padding-top: 1%;
+    cursor: pointer;
+}

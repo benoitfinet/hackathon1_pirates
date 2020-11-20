@@ -1,11 +1,14 @@
+import './Pirate.css';
+
 const Pirate = ({ offer, setDetails }) => {
 
   return(
-    <div className="color" onClick={()=> setDetails(offer)}>
-      <h3>Captain : {offer.captain}</h3>
-      <p>Ship : {offer.ship}</p>
-      <p>Crew number : {offer.crewNumber}</p>
-      <br/>
+    <div id="piratemain" onClick={()=> setDetails(offer)}>
+      <h3>Speciality : {offer.job_name}</h3>
+      <p>Last Name : {offer.user_lastname}</p>
+      <p>First Name : {offer.user_firstname}</p>
+      <p>Age : {offer.age}</p>
+      <p>Nationality : {offer.language_name}</p>
     </div>
   );
 }

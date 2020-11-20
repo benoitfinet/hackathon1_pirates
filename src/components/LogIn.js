@@ -6,13 +6,13 @@ function LogIn() {
     return (
         <div>
             <Link to="/"><img alt="logo" id="logo" src={logo}></img></Link>
-                <div className="FormEmployee">
+                <div className="loginmain">
                 <h1>Log In</h1>
 
                 <form >
                 <div>
 
-                    <div className="form-data">
+                    <div className="loginform">
                     <input
                         type="email"
                         id="email"
@@ -22,7 +22,7 @@ function LogIn() {
                     />
                     </div>
 
-                    <div className="form-data">
+                    <div className="loginform">
                     <input
                         type="password"
                         id="password"
@@ -31,13 +31,17 @@ function LogIn() {
                         className="log-input"
                     />
                     </div>
-                    <div className="form-data">
-                    <Link to="/Crew">
+                    <div className="loginform">
+                    <Link to="/UserProfile">
                     <input
                     type="submit"
                     value="Connect"
+<<<<<<< HEAD
                     id="button"
                     className="log-input"
+=======
+                    id="loginbutton"
+>>>>>>> 1d6b83d0d172de8dd10d5b05b835441ceb35c8eb
                     />
                     </Link>
                     </div>

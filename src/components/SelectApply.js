@@ -1,29 +1,29 @@
-import './SelectPirate.css';
+import './SelectApply.css';
 
-const SelectPirate = () => {
+const SelectApply = () => {
   return (
     <div>
       <select>
-        <option value="">Select pirate:</option>
-        <option value="all">All pirates</option>
+        <option value="">Select Apply:</option>
+        <option value="all">All Applys</option>
         <option value="onlyCrewNumberSupTen">Crew number sup 10</option>
       </select>
       <select>
-        <option value="0">Select pirate:</option>
+        <option value="0">Select Apply:</option>
         <option value="1">...</option>
         <option value="2">...</option>
         <option value="3">...</option>
         <option value="4">...</option>
       </select> 
       <select>
-        <option value="0">Select pirate:</option>
+        <option value="0">Select Apply:</option>
         <option value="1">...</option>
         <option value="2">...</option>
         <option value="3">...</option>
         <option value="4">...</option>
       </select>
       <select>
-        <option value="0">Select pirate:</option>
+        <option value="0">Select Apply:</option>
         <option value="1">...</option>
         <option value="2">...</option>
         <option value="3">...</option>
@@ -33,4 +33,4 @@ const SelectPirate = () => {
   );
 }
 
-export default SelectPirate;
+export default SelectApply;

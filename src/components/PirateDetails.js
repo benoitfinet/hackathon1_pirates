@@ -1,12 +1,12 @@
 import "./PirateDetails.css";
 
 const PirateDetails = ({ details }) => {
+  console.log(details);
   return (
     <div className="detailsPirates">
-      <img src={details.image} />
-      <h1>{details.captain}</h1>
-      <p>{details.infoSup}</p>
-
+      <img alt={details.user_firstname} src={details.url_sealer} />
+      <h1>{details.user_firstname}</h1>
+      <p>{details.description}</p>
     </div>
   );
 }
