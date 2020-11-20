@@ -25,8 +25,14 @@ class SignIn extends Component {
         e.preventDefault();
         const config = {
           method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(this.state)
         };
+        console.log(config)
         const url = "http://localhost:8000/security/register";
+    
         fetch(url, config)
             .then((res) => res.json())
             .then((res) => {
@@ -101,7 +107,7 @@ class SignIn extends Component {
                         />
                         </div>
                         <div className="signinform">
-                        <select id="role_id" name="role_id">
+                        <select id="role_id" name="role_id" onChange={this.onChange}>
                             <option value="1">Recruiter</option>
                             <option value="2"> Candidate </option>
                         </select>

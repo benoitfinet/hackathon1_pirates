@@ -9,7 +9,8 @@ import SelectApply from "./SelectApply";
 class PirateOffers extends React.Component {
 
   state= {
-    rdetails: [0]
+    rdetailsArray: [0],
+    rdetails: {}
   }
 
   setrDetails = (rdetails) => {
@@ -19,11 +20,12 @@ class PirateOffers extends React.Component {
   componentDidMount() { 
     axios.get('http://localhost:8000/recruiter/index')
         .then(res => {
-            this.setState({ rdetails: res.data });
+            this.setState({ rdetailsArray: res.data });
     });
 }
 
   render() {
+    console.log(this.state.rdetails);
     return (
       <div>
         <Link to="/"><Header /></Link>
@@ -31,7 +33,7 @@ class PirateOffers extends React.Component {
       <div>
         <div>
         <div>{this.state.rdetails && <ApplyDetails rdetails={this.state.rdetails} />}</div>
-          {this.state.rdetails.map((roffer) => {
+          {this.state.rdetailsArray.map((roffer) => {
             return <Apply roffer={roffer} setrDetails={this.setrDetails} />
           })}
           </div>
