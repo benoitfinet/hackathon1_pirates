@@ -1,3 +1,5 @@
+import './SelectPirate.css';
+
 const SelectPirate = () => {
   return (
     <div>

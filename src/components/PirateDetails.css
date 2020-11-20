@@ -1,4 +1,5 @@
 .detailsPirates {
-  margin-left: 160px;
-    text-align: center;
+  text-align: center;
+  float: right;
+  padding-right: 30%;
 }

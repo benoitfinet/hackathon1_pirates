@@ -5,8 +5,6 @@ import Pirate from "./Pirate";
 import PirateDetails from "./PirateDetails";
 import { Link } from 'react-router-dom';
 import SelectPirate from "./SelectPirate";
-import './SelectPirate.css';
-import './PirateOffers.css';
 
 const offers = [
   {
@@ -103,15 +101,13 @@ class PirateOffers extends React.Component {
       <div>
         <Link to="/"><Header /></Link>
         <SelectPirate />
-      <div className="flex">
+      <div>
         <div> 
+        <div>{this.state.details && <PirateDetails details={this.state.details} />}</div>
           {offers.map((offer) => {
-            return <Pirate offer={offer} setDetails={this.setDetails}/> 
+            return <Pirate offer={offer} setDetails={this.setDetails} /> 
           })}
           </div>
-        <div>
-          {this.state.details && <PirateDetails details={this.state.details} />}
-        </div>
       </div>
       </div>
     );
