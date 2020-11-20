@@ -10,10 +10,10 @@ function Home() {
             <img id="homelogo" alt="logo" src={logo} />
             <div>
                 
-                <p id="intro">AHOY BUCCANEER!<br></br> Please, if you already have an account, log in. If you don't, please create one</p>
+                <p id="homeintro">AHOY BUCCANEER!<br></br> Please, if you already have an account, log in. If you don't, please create one</p>
             </div>
-            <img id="flag" alt="flag" src={flag} />
-            <div id="lookingfor">
+            <img id="homeflag" alt="flag" src={flag} />
+            <div id="homelookingfor">
                 <p><Link to="/SignIn">Sign In</Link></p>
                 <p><Link to="/LogIn">Log In</Link></p> 
             </div>

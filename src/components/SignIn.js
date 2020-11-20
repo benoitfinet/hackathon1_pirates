@@ -7,11 +7,11 @@ function SignIn() {
     return (
         <div>
             <Link to="/"><img alt="logo" id="logo" src={logo} /></Link>
-            <div className="FormEmployee">
+            <div className="signinmain">
                 <h1>Sign In</h1>
                 <form >
                 <div>
-                    <div className="form-data">
+                    <div className="signinform">
                     <input
                         type="text"
                         id="name"
@@ -19,7 +19,7 @@ function SignIn() {
                         placeholder="Sparrow"
                     />
                     </div>
-                    <div className="form-data">
+                    <div className="signinform">
                     <input
                         type="text"
                         id="firstname"
@@ -27,7 +27,7 @@ function SignIn() {
                         placeholder="Jack"
                     />
                     </div>
-                    <div className="form-data">
+                    <div className="signinform">
                     <input
                         type="email"
                         id="email"
@@ -35,7 +35,7 @@ function SignIn() {
                         placeholder="pirates@hookedIn.com"
                     />
                     </div>
-                    <div className="form-data">
+                    <div className="signinform">
                     <input
                         type="password"
                         id="password"
@@ -43,7 +43,7 @@ function SignIn() {
                         placeholder="Insert password"
                     />
                     </div>
-                    <div className="form-data">
+                    <div className="signinform">
                     <input
                         type="password"
                         id="password"
@@ -51,7 +51,7 @@ function SignIn() {
                         placeholder="Confirm password"
                     />
                     </div>
-                    <div className="form-data">
+                    <div className="signinform">
                     <Link to="/Crew">
                     <input
                     type="submit"
